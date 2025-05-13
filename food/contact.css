@@ -1,0 +1,311 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-weight: 700;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+  }
+  body {
+    font-family: "Yuji Mai", serif !important;
+    background: black !important;
+    color: white !important;
+    overflow-x: hidden;
+    line-height: 1.5 !important;
+    background-image: url(images/images/slice-of-pizza-falling-into-the-air-on-a-dark-background-photo.jpg) !important;
+  }
+  /* PRELOADER STYLE */
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 1s ease;
+  }
+  
+  #preloader-image {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+  }
+  
+  .background-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  /* =============== */
+  /* header section */
+  /* =============== */
+  
+  header {
+    border: 1px solid;
+    padding: 20px;
+    height: 60px;
+    background: white;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    position: relative;
+  }
+  
+  #menuIcon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: -500px;
+    left: 0;
+    background: white;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar .navbar-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-list .navbar-item {
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  .navbar-list .navbar-item::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    background: black;
+    margin: 0 auto;
+    transition: all 0.4s ease;
+  }
+  
+  .navbar-list .navbar-item:hover::after {
+    width: 100%;
+  }
+  
+  .navbar-list .navbar-item.active {
+    border-bottom: 2px solid black;
+  }
+  
+  .navbar-item .navbar-link {
+    color: red;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .navbar-item .navbar-link:hover {
+    color: black;
+  }
+  
+  #closeIcon {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    font-size: 20px;
+    transition: 0.5s ease;
+  }
+  
+  #closeIcon:hover {
+    color: red;
+    cursor: pointer;
+  }
+  /* =============== */
+  /* hidden */
+  /* =============== */
+  .hidden {
+    display: none;
+  }
+  
+  .brand {
+    color: red;
+  }
+  
+  .contact-contain-text {
+    justify-self: center;
+    margin-top: 50px;
+  }
+  
+  .contact-contain-text p {
+    font-size: x-large;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+  }
+  
+  .contact-contain-text h3 {
+    text-align: center;
+  }
+  
+  span {
+    color: red;
+  }
+  
+  .inner-container {
+    margin-top: 30px;
+  }
+  
+  .mothercontact {
+    /*  */
+    text-align: center;
+  }
+  
+  form input {
+    /* position: relative; */
+    color: black;
+    border: 1px solid;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border-width: 20px;
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-color: transparent;
+    background: rgb (45, 53, 63);
+    box-shadow: 0 0 5px;
+  }
+  form select {
+    width: 50%;
+  }
+  
+  button {
+    background: black;
+    font-size: larger;
+    border: 2px solid;
+    border-color: red;
+  }
+  
+  button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .num {
+    color: white;
+    background: red;
+  }
+  
+  .btn-open {
+    border: transparent;
+    background: red;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  /* Media  Queries*/
+  @media (min-width: 768px) {
+    .navbar {
+      margin: 10px;
+      position: relative;
+      top: 0 !important;
+      background: transparent;
+      height: inherit !important;
+      flex-direction: row;
+      justify-content: right !important;
+    }
+    #menuIcon,
+    #closeIcon {
+      display: none;
+    }
+    .navbar .navbar-list {
+      flex-direction: row;
+    }
+    .navbar-list .navbar-item {
+      margin: 0 10px;
+    }
+    .nav-btn {
+      margin-left: 10px;
+    }
+    form input {
+      width: 50%;
+    }
+  }
+  .combo-deals {
+    padding: 40px 20px;
+    background: #fffbea;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .combo-deals h2 {
+    font-size: 2.2rem;
+    color: #d62828;
+    margin-bottom: 20px;
+  }
+  
+  .combo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .combo-card {
+    background: #ffffff;
+    border: 2px solid #fcbf49;
+    padding: 20px;
+    border-radius: 16px;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .combo-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .combo-card h3 {
+    font-size: 1.5rem;
+    color: #003049;
+    margin-bottom: 10px;
+  }
+  
+  .combo-card p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+  
+  .combo-card span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #e63946;
+  }
+  
+  select#combo-choice {
+    border: 1px solid white;
+    border-radius: 20px;
+    border-width: 20px;
+    margin-top: 20px;
+  }
+  
+  select#drink-choice {
+    border: 1px solid white;
+    border-radius: 20px;
+    border-width: 20px;
+    margin-top: 20px;
+  }
+  
+  select#pizza-choice{
+    border: 1px solid white;
+    border-radius: 20px;
+    border-width: 20px;
+    margin-top: 20px;
+  }
+  

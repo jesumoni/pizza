@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pizza</title>
+    <link rel="stylesheet" href="contact.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <img
+        src="images/images/pizza-logo-cartoon-this-logo-is-highly-suitable-for-any-pizza-related-restaurant-fast-food-delivery-bistro-catering-and-italian-food-related-businesses-vector.jpg"
+        alt="Loading..."
+        id="preloader-image"
+      />
+    </div>
+
+    <div class="background-img">
+      <!-- Header -->
+      <header>
+        <div class="brand">Dacrust</div>
+        <nav class="navbar fixed-top" id="navBar">
+          <i class="fa-regular fa-circle-xmark" id="closeIcon"></i>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="pizza.html" class="navbar-link">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="menu.html" class="navbar-link">Menu</a>
+            </li>
+            <li class="navbar-item active">
+              <a href="contact.html" class="navbar-link">Contact</a>
+            </li>
+            <li class="navbar-item">
+              <a href="payment.html" class="navbar-link">Payment</a>
+            </li>
+            <li class="navbar-item">
+              <a href="vip-pg.html" class="navbar-link">Exclusive</a>
+            </li>
+          </ul>
+        </nav>
+        <i class="fa-solid fa-bars" id="menuIcon"></i>
+      </header>
+
+      <!-- Contact Info -->
+      <div class="contact-contain-text">
+        <h1 style="text-align: center">CONTACT US</h1>
+        <p>
+          Find us at 500 Terry Francois Street, San Francisco, CA 94158 or call
+          us at <span class="num">05050515-122330</span>
+        </p>
+        <p>
+          <span>FYI!!!</span> We offer full-service catering for any event,
+          large or small. We cater food to satisfy the biggest criteria of
+          all—both look and taste.
+        </p>
+        <p>Email us at dacrustfood02@gmail.com</p>
+        <h3>
+          Reserve a table, ask for today's special or just send us a message:
+        </h3>
+        <button class="btn-open"><h4>Open from 10am to 11pm</h4></button>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-container">
+        <div class="inner-container">
+          <div class="mothercontact">
+            <div class="box3">
+              <form action="#">
+                <input type="text" placeholder="Your name" required />
+
+                <select name="pizza" id="pizza-choice">
+                  <option value="">select pizza</option>
+                  <option value="">Neapolitan</option>
+                  <option value="">new york style</option>
+                  <option value="">carlifonia</option>
+                  <option value="">pepperoni</option>
+                  <option value="">margherita</option>
+                  <option value="">white pizza</option>
+                  <option value="">pizza romana</option>
+                  <option value="">capriccosa</option>
+                  <option value="">vietnamese</option>
+                  <option value="">sillican</option>
+                </select>
+                <input type="number" placeholder="no of boxes" required />
+
+                <select name="drinks" id="drink-choice">
+                  <option value="">Select a drink</option>
+                  <option value="">orange juice</option>
+                  <option value="">Craneberry</option>
+                  <option value="">cocacola</option>
+                  <option value="">milkshake</option>
+                  <option value="">apple juice</option>
+                  <option value="">tartcherry</option>
+                  <option value="">lemon juice</option>
+                  <option value="">lemonade</option>
+                  <option value="">blackberry</option>
+                  <option value="">prune juice</option>
+                  <option value="">pomegranate</option>
+                </select>
+
+                <input type="number" placeholder="no of bottles" required />
+
+                <select name="combo-choice" id="combo-choice">
+                  <option value="">Select a Combo Deal (optional)</option>
+                  <option value="Family Feast">Family Feast</option>
+                  <option value="Game Day Special">Game Day Special</option>
+                  <option value="Date Night Pack">Date Night Pack</option>
+                </select>
+
+                <input type="text" placeholder="Address" required />
+
+                <input
+                  type="datetime-local"
+                  placeholder="Date and time"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Message / Special requirements"
+                  style="height: 150px"
+                />
+              </form>
+              <button><a href="payment.html">Message and Pay</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="pizza.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

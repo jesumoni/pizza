@@ -1,0 +1,49 @@
+body {
+    font-family: "Yuji Mai", serif;
+    background-image: url("images/images/5854.jpg_wh1200.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 560px;
+    color: white;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+  
+  .container {
+    animation: fadeIn 1s ease-in;
+    margin-top: 100px;
+    max-width: 400px;
+    border: 2px solid transparent;
+    box-shadow: 2px 2px 2px 2px #030102;
+    border-radius: 5px;
+  }
+  
+  input,
+  button {
+    margin-top: 15px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      margin: 50px 20px;
+      padding: 20px;
+    }
+  }
+  
